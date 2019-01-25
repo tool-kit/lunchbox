@@ -17,3 +17,27 @@ Use all lowercase and hyphens
 feature/232/some-new-feature
 fix/48/remove-old-library
 docs/65/sample-of-new-feature
+
+# Commit message
+
+## Group tokens
+Prefix the commit message with the following:
+- feat
+- fix
+- docs
+
+## In the commit message reference the issue
+The following keywords, followed by an issue number, will close the issue:
+- close
+- closes
+- closed
+- fix
+- fixes
+- fixed
+- resolve
+- resolves
+- resolved
+
+## Example commit message
+feat: some new feature and closes #5
+fix: resolves problems and closes #34, closes #23, and closes example_user/example_repo#42
