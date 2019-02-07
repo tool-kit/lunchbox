@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  web_app:
+    build: ./services/web_app
+    working_dir: /home/node/app
+    volumes:
+     - web_app:/home/node/app
+    environment:
+      TEST_VAR: ${TEST_VAR}
+
+volumes:
+  web_app:
+    driver: local
+    driver_opts:
+      o: bind
+      device: ${PWD}/volumes/web_app
